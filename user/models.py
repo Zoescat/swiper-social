@@ -15,9 +15,9 @@ class User(models.Model):
     sex=models.CharField(max_length=8,choices=SEX)
     avatar=models.ImageField(max_length=256)
     location=models.CharField(max_length=32)
-    birth_year=models.IntegerField()
-    birth_month=models.IntegerField()
-    birth_day=models.IntegerField()  
+    birth_year=models.IntegerField(default=2020)
+    birth_month=models.IntegerField(default=1)
+    birth_day=models.IntegerField(default=1)  
 
     # 装饰器把方法转换成属性
     @property
