@@ -15,7 +15,7 @@ class User(models.Model):
     sex=models.CharField(max_length=8,choices=SEX)
     avatar=models.ImageField(max_length=256)
     location=models.CharField(max_length=32)
-    birth_year=models.IntegerField(default=2020)
+    birth_year=models.IntegerField(default=2000)
     birth_month=models.IntegerField(default=1)
     birth_day=models.IntegerField(default=1)  
 
