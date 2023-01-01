@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 from user.logic import send_verify_code
 
 def get_verify_code(request):
