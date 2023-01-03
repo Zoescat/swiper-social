@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.utils.deprecation import MiddlewareMixin
 
 
-class CorsMiddlrware(MiddlewareMixin):
+class CorsMiddleware(MiddlewareMixin):
     '''处理客户端JS的跨域'''
     def process_request(self,request):
         if request.method=='OPTION' and 'HTTP_ACCESS_CONTROL_REQUEST_METHOD' in request.META:
