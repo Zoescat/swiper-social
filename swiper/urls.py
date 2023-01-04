@@ -19,8 +19,9 @@ from django.urls import re_path as url
 from user import api as user_api
 
 urlpatterns = [
-    url(r'^api/user/verify',user_api.get_verify_code),
-    url(r'^api/user/login',user_api.login),
-    url(r'^api/user/profile',user_api.get_profile),
+    url(r'^api/user/verify$',user_api.get_verify_code),
+    url(r'^api/user/login$',user_api.login),
+    url(r'^api/user/profile$',user_api.get_profile),
+    url(r'^api/user/profile/modify$',user_api.modify_profile),
     # path("admin/", admin.site.urls),
 ]

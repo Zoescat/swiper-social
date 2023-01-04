@@ -66,7 +66,7 @@ class Profile(models.Model,ModelMixin):
     min_dating_age=models.IntegerField(default=18,verbose_name='最小交友年龄')
     max_dating_age=models.IntegerField(default=45,verbose_name='最大交友年龄')
     
-    vibraion=models.BooleanField(default=True,verbose_name='开启震动')
+    vibration=models.BooleanField(default=True,verbose_name='开启震动')
     only_matche=models.BooleanField(default=True,verbose_name='不让未匹配的人看我的相册')
     auto_play=models.BooleanField(default=True,verbose_name='自动播放视频')
     
